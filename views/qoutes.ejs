@@ -12,9 +12,14 @@
     <h1>Here are all the qoutes</h1>
 
     <div class="container">
-        <%= data.name %>
-        <%= data.qoute %>
+        <%= data %>
 
+
+        <% for ( var user in data) { %>
+
+        <%= user.name %>
+
+        <%  } %>
     </div>
 
     <!-- Optional JavaScript -->

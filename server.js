@@ -60,7 +60,7 @@ app.post('/qoutes', function(request, response){
 
 app.get('/qoute', function(request, response){
     User.find({}).then(function(users){
-        // console.log(users);
+        console.log(users);
         response.render('qoutes.ejs', { data: users});
     }).catch(function(err){
         console.log('there was an error');
